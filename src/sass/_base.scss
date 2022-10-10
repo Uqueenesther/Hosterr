@@ -1,0 +1,95 @@
+// COLOURS
+$color-primary: #f9f4e8;
+// $color-primary: #fdcd5b;
+$color-btn-1:#eae161;
+$color-btn-2:#b6525c;
+$color-btn:#4977ea;
+// $color-font-1:#000000;
+$color-font:#1e1d1c;
+$font-primary: Playfair Display,sans-serif;
+$font-secondary: Lato,sans-serif;
+
+
+$bp-ex-large:81.25em;
+// 1300
+$bp-largest: 76.9em;  
+// 1200px
+$bp-larger: 68.75em;  
+// 1100px
+$bp-large: 56.25em;  
+// 900
+$bp-medium: 50.00em;  
+//800px
+$bp-small-1: 37.5em;  
+//600px
+$bp-small-2: 34.4em;  
+//550px
+$bp-small-3: 28.13em;  
+//450px
+$bp-smaller: 25.00em;  
+//400px
+$bp-smaller-2:20.63;
+// 330
+
+
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @media only screen and (max-width:$bp-ex-large){
+        font-size: 60%;
+   }
+
+   @media only screen and (max-width:$bp-largest){
+    font-size: 55%;
+    }
+
+    @media only screen and (max-width:$bp-larger){
+        font-size: 52%;
+    }
+
+
+    @media only screen and (max-width:$bp-large){
+        font-size: 45%;
+    }
+
+    @media only screen and (max-width:$bp-medium){
+        font-size: 50%;
+    }
+    @media only screen and (max-width:$bp-small-2){
+        font-size: 48%;
+    }
+
+    @media only screen and (max-width:$bp-small-3){
+        font-size: 45%;
+    }
+
+    @media only screen and (max-width:$bp-small-3){
+        font-size: 41%;
+    }
+
+    @media only screen and (max-width:$bp-smaller-2){
+        font-size: 38%;
+    }
+
+}
+
+body {
+    background-color: $color-primary;
+    font-family:$font-secondary;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.6rem;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: min-content 75vh min-content;
+    // grid-template-columns: repeat(4, 1fr) ;
+    // grid-template-columns: minmax(10rem, 1fr) repeat(8, minmax(min-content, 15rem)) minmax(10rem,1fr);
+    grid-template-columns:   repeat(auto-fit, minmax(150px, 1fr));
+}
+
+
