@@ -330,15 +330,29 @@
                    }
 
                    @media only screen and (max-width:$bp-medium){
-                    height: 45vh;
-                    bottom: 10rem;  
-                    margin-left: 2rem;
-                    rotate: 2deg;
+                    max-width: 50%;
+                    height: 56rem;
+                    bottom: 4rem;  
+                    margin-left: 1rem;
+                    transform: skewX(-8deg);
+                    // rotate: 5deg;
                     position: absolute;
                     z-index: 100;
                     // width: 45rem;
                    
                }
+
+               @media only screen and (max-width:$bp-small-1){
+                height: 50rem;
+                width: 55rem;
+                bottom: 10rem;  
+                margin-left: 2rem;
+                rotate: 2deg;
+                position: absolute;
+                z-index: 100;
+                // width: 45rem;
+               
+           }
                 } 
 
 
@@ -350,7 +364,13 @@
                      z-index: 90;   
                      transform: skewX(28deg);
                     
-                     
+                     @media only screen and (max-width:$bp-medium){
+                        bottom:8rem;
+                        position: absolute;
+                        z-index: 90;   
+                        transform: skewX(26deg);
+                       
+                   }
                  }
 
                  &-pink{
@@ -360,6 +380,15 @@
                     position: absolute;
                     z-index: 90;
                     transform: skewX(15deg);
+
+                    @media only screen and (max-width:$bp-medium){
+                        max-width: 65%;
+                        bottom:8rem;
+                        position: absolute;
+                        z-index: 90;   
+                        transform: skewX(13deg);
+                       
+                   }
                 }
 
                 &-purple{
@@ -369,6 +398,14 @@
                     position: absolute;
                     z-index: 90;
                      transform: skewX(5deg);
+
+                     @media only screen and (max-width:$bp-medium){
+                        bottom:6rem;
+                        position: absolute;
+                        z-index: 90;   
+                        transform: skewX(3deg);
+                       
+                   }
                 }
             }
         }
